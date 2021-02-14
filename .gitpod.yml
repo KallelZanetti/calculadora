@@ -2,6 +2,8 @@ image:
   file: .gitpod.dockerfile
 ports:
   - port: 19000-19002
+    onOpen: open-preview
 tasks:
   - before: npm install
+    init: cd calculadora
     command: npx expo start --tunnel
