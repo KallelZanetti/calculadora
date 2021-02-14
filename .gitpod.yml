@@ -5,5 +5,4 @@ ports:
     onOpen: open-preview
 tasks:
   - before: npm install
-    init: cd calculadora
     command: npx expo start --tunnel
